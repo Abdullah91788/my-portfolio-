@@ -21,34 +21,53 @@
    Change these values to easily customize the entire appearance of the website!
    ========================================================================== */
 :root {
-  /* CHANGE THIS: Primary neutral palette */
-  --bg-page: #FAFAF9;           /* Off-white background for clean academic look */
-  --bg-surface: #FFFFFF;        /* Pure white for cards, boxes, and navbar */
-  --bg-tag: #F3F4F6;            /* Neutral light grey for skill and coursework tags */
-  
-  --text-primary: #1F2937;      /* Near-black text for sharp readability */
-  --text-secondary: #6B7280;    /* Muted grey for subheadings, dates, and labels */
-  --border-color: #E5E7EB;      /* Subtle 1px borders between elements */
+  /* Soft Colors */
+  --accent-blue: #2563EB;        /* Soft blue for buttons and links */
+  --accent-blue-hover: #1D4ED8;  /* Slightly deeper blue on hover */
+  --accent-teal: #0D9488;        /* Soft teal for small highlights (e.g. section dividers) */
 
-  /* CHANGE THIS: Exactly ONE accent color (Deep Blue for academic elegance) */
-  --accent: #1D4ED8;            /* Primary action blue (links, primary button) */
-  --accent-hover: #1E40AF;      /* Slightly darker blue when hovering */
-  --accent-light: #EFF6FF;      /* Very soft blue tint for active/focus states */
+  /* Neutral palette (Light mode default) */
+  --bg-page: #FAFAF9;            /* Off-white background for clean academic look */
+  --bg-surface: #FFFFFF;         /* Pure white for cards, boxes, and navbar */
+  --bg-tag: #F3F4F6;             /* Neutral light grey for skill and coursework tags */
+  
+  --text-primary: #1F2937;       /* Near-black text for sharp readability */
+  --text-secondary: #6B7280;     /* Muted grey for subheadings, dates, and labels */
+  --border-color: #E5E7EB;       /* Subtle 1px borders between elements */
+
+  /* Aliases pointing to soft blue */
+  --accent: var(--accent-blue);
+  --accent-hover: var(--accent-blue-hover);
+  --accent-light: #EFF6FF;
 
   /* Typography */
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-size-base: 1rem;       /* 16px */
-  --line-height-base: 1.65;     /* Generous line height for reading comfort */
+  --font-size-base: 1rem;        /* 16px */
+  --line-height-base: 1.65;      /* Generous line height for reading comfort */
 
   /* Spacing and Dimensions */
-  --container-max-width: 900px; /* Centered narrow container for academic focus */
+  --container-max-width: 900px;  /* Centered narrow container for academic focus */
   --section-padding: 3.5rem 1.25rem; /* Generous breathing room between sections */
-  --radius-sm: 4px;             /* Subtle rounded corners for tags */
-  --radius-md: 6px;             /* Rounded corners for cards */
-  --radius-full: 9999px;        /* Fully rounded pills for buttons & avatars */
+  --radius-sm: 4px;              /* Subtle rounded corners for tags */
+  --radius-md: 6px;              /* Rounded corners for cards */
+  --radius-full: 9999px;         /* Fully rounded pills for buttons & avatars */
   
   /* Subtle transition for interactive elements */
   --transition: all 0.2s ease-in-out;
+}
+
+/* Dark mode theme variables */
+[data-theme="dark"] {
+  --bg-page: #0F172A;            /* Deep dark slate background */
+  --bg-surface: #1E293B;         /* Elevated dark slate for cards & navbar */
+  --bg-tag: #334155;             /* Dark slate for tags */
+  --text-primary: #F8FAFC;       /* Crisp off-white text */
+  --text-secondary: #94A3B8;     /* Muted grey text */
+  --border-color: #334155;       /* Subtle dark border */
+  --accent-blue: #3B82F6;        /* Bright soft blue for dark mode contrast */
+  --accent-blue-hover: #60A5FA;
+  --accent-teal: #14B8A6;        /* Vibrant soft teal for dark mode highlights */
+  --accent-light: #1E3A8A;
 }
 
 
@@ -129,7 +148,7 @@ ul {
 .section-divider {
   width: 48px;
   height: 2px;
-  background-color: var(--accent);
+  background-color: var(--accent-teal); /* Soft teal highlight */
   margin-top: 0.5rem;
   margin-bottom: 0.75rem;
 }
@@ -244,8 +263,7 @@ ul {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(250, 250, 249, 0.95); /* Semi-transparent off-white */
-  backdrop-filter: blur(8px);
+  background-color: var(--bg-surface);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -310,6 +328,26 @@ ul {
 .nav-btn {
   padding: 0.35rem 0.85rem;
   font-size: 0.85rem;
+}
+
+/* Theme Toggle Button (Light/Dark mode) */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.28rem 0.65rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent-blue);
+  background-color: var(--bg-tag);
 }
 
 /* Mobile hamburger button (hidden on desktop) */
@@ -803,7 +841,8 @@ ul {
     padding: 0.4rem 0;
   }
 
-  .nav-btn {
+  .nav-btn,
+  .theme-toggle {
     width: 100%;
   }
 

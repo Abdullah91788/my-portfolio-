@@ -105,3 +105,38 @@ function highlightActiveNavLink() {
 
 // Run the highlight function every time the user scrolls
 window.addEventListener("scroll", highlightActiveNavLink);
+
+
+// ==========================================================================
+// 4. DARK / LIGHT THEME TOGGLE
+// Switches between light and dark mode, updates the icon, and remembers the choice.
+// ==========================================================================
+
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+
+// Function to apply the chosen theme
+function applyTheme(theme) {
+  if (theme === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
+    if (themeIcon) themeIcon.textContent = "☀️"; // Sun icon in dark mode
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+    if (themeIcon) themeIcon.textContent = "🌙"; // Moon icon in light mode
+  }
+}
+
+// 1. Check if the user previously saved a choice; default is 'light'
+const savedTheme = localStorage.getItem("theme") || "light";
+applyTheme(savedTheme);
+
+// 2. Toggle theme on button click and remember choice in localStorage
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const isCurrentlyDark = document.documentElement.getAttribute("data-theme") === "dark";
+    const newTheme = isCurrentlyDark ? "light" : "dark";
+    
+    applyTheme(newTheme);
+    localStorage.setItem("theme", newTheme); // Remember choice after refresh
+  });
+}

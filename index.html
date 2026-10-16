@@ -18,20 +18,23 @@
     any web browser (Chrome, Edge, Firefox, Safari). No server required!
   =============================================================================
 -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- CHANGE THIS: Title displayed in browser tab -->
   <title>Abdullah Islam | Academic Portfolio</title>
-  
+
   <!-- SEO & Academic Meta Tags -->
-  <meta name="description" content="Academic portfolio of Abdullah Islam, BS Computer Science student at KKKUK, seeking MS admission in Computer Science.">
+  <meta name="description"
+    content="Academic portfolio of Abdullah Islam, BS Computer Science student at KKKUK, seeking MS admission in Computer Science.">
   <meta name="author" content="Abdullah Islam">
-  
+
   <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- =======================================================================
@@ -59,7 +62,12 @@
           <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        
+
+        <!-- Theme Toggle Button (Moon in light mode, Sun in dark mode) -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span id="themeIcon">🌙</span>
+        </button>
+
         <!-- CV Download Button in header -->
         <!-- CHANGE THIS: Place your actual CV file named Abdullah_Islam_CV.pdf in the same folder -->
         <a href="Abdullah_Islam_CV.pdf" class="btn btn-outline nav-btn" download>Download CV</a>
@@ -75,7 +83,7 @@
          ======================================================================= -->
     <section class="section hero-section" id="hero">
       <div class="container hero-container">
-        
+
         <!-- Optional Small Round Photo Placeholder -->
         <div class="hero-avatar-wrapper">
           <!-- 
@@ -90,21 +98,23 @@
         <div class="hero-text">
           <!-- CHANGE THIS: Your full name -->
           <h1 class="hero-title">Abdullah Islam</h1>
-          
+
           <!-- One-line academic headline -->
           <p class="hero-tagline">
             BS Computer Science student at KKKUK | Interested in networking, cloud and AI
           </p>
-          
+
           <!-- Quick Action Buttons -->
           <div class="hero-buttons">
             <!-- Primary Action: Download CV -->
             <a href="Abdullah_Islam_CV.pdf" class="btn btn-primary" download>Download CV</a>
-            
+
             <!-- Secondary Links: GitHub, LinkedIn, Email -->
             <!-- CHANGE THIS: Replace with your actual profile URLs -->
-            <a href="https://github.com/Abdullah91788" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/[YOUR-LINKEDIN-HANDLE]" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Abdullah91788" class="btn btn-secondary" target="_blank"
+              rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/[YOUR-LINKEDIN-HANDLE]" class="btn btn-secondary" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:[YOUR-EMAIL@example.com]" class="btn btn-secondary">Email</a>
           </div>
         </div>
@@ -118,7 +128,7 @@
          ======================================================================= -->
     <section class="section" id="about">
       <div class="container">
-        
+
         <!-- Section Header pattern used across all sections for consistency -->
         <div class="section-header">
           <h2 class="section-title">About Me</h2>
@@ -129,16 +139,20 @@
         <!-- CHANGE THIS: Tailor this bio to your specific background and MS goals -->
         <div class="about-bio">
           <p>
-            I am a final-year undergraduate student pursuing a Bachelor of Science in Computer Science at Khushal Khan Khattak University Karak (KKKUK). 
-            My academic focus revolves around computer networking, distributed systems, and modern software engineering principles. 
-            Throughout my coursework and independent projects, I have developed a strong foundation in core algorithms, object-oriented design, and practical web systems. 
-            I am currently preparing for Master's degree studies to engage in applied systems research and deepen my understanding of scalable cloud architectures.
+            I am a final-year undergraduate student pursuing a Bachelor of Science in Computer Science at Khushal Khan
+            Khattak University Karak (KKKUK).
+            My academic focus revolves around computer networking, distributed systems, and modern software engineering
+            principles.
+            Throughout my coursework and independent projects, I have developed a strong foundation in core algorithms,
+            object-oriented design, and practical web systems.
+            I am currently preparing for Master's degree studies to engage in applied systems research and deepen my
+            understanding of scalable cloud architectures.
           </p>
         </div>
 
         <!-- 3 Quick-Fact Cards -->
         <div class="facts-grid">
-          
+
           <!-- Fact 1: University -->
           <div class="fact-card">
             <span class="fact-label">University</span>
@@ -171,7 +185,7 @@
          ======================================================================= -->
     <section class="section" id="education">
       <div class="container">
-        
+
         <div class="section-header">
           <h2 class="section-title">Education</h2>
           <div class="section-divider"></div>
@@ -243,7 +257,7 @@
          ======================================================================= -->
     <section class="section" id="research">
       <div class="container">
-        
+
         <div class="section-header">
           <h2 class="section-title">Research Interests</h2>
           <div class="section-divider"></div>
@@ -260,12 +274,14 @@
             <h3 class="card-title">Cloud & Distributed Systems</h3>
             <p class="card-text">
               <!-- CHANGE THIS: 1-2 lines on why this area interests you -->
-              Interested in container orchestration, resource allocation in multi-tenant cloud environments, and fault-tolerant distributed data storage architectures.
+              Interested in container orchestration, resource allocation in multi-tenant cloud environments, and
+              fault-tolerant distributed data storage architectures.
             </p>
             <div class="reading-box">
               <span class="reading-label">Currently Reading:</span>
               <!-- CHANGE THIS: Paper, book, or survey article title -->
-              <span class="reading-title">"[Paper Title / e.g. Designing Data-Intensive Applications by Martin Kleppmann]"</span>
+              <span class="reading-title">"[Paper Title / e.g. Designing Data-Intensive Applications by Martin
+                Kleppmann]"</span>
             </div>
           </div>
 
@@ -275,12 +291,14 @@
             <h3 class="card-title">Computer Networks & Security</h3>
             <p class="card-text">
               <!-- CHANGE THIS: 1-2 lines on why this area interests you -->
-              Exploring next-generation routing protocols, software-defined networking (SDN), and latency reduction strategies in edge-to-cloud communications.
+              Exploring next-generation routing protocols, software-defined networking (SDN), and latency reduction
+              strategies in edge-to-cloud communications.
             </p>
             <div class="reading-box">
               <span class="reading-label">Currently Reading:</span>
               <!-- CHANGE THIS: Paper, book, or survey article title -->
-              <span class="reading-title">"[Paper Title / e.g. Survey on Software-Defined Networking and Edge Protocols]"</span>
+              <span class="reading-title">"[Paper Title / e.g. Survey on Software-Defined Networking and Edge
+                Protocols]"</span>
             </div>
           </div>
 
@@ -290,12 +308,14 @@
             <h3 class="card-title">Applied AI & Intelligent Systems</h3>
             <p class="card-text">
               <!-- CHANGE THIS: 1-2 lines on why this area interests you -->
-              Fascinated by applying machine learning algorithms to automate network anomaly detection and optimize backend performance in real-time systems.
+              Fascinated by applying machine learning algorithms to automate network anomaly detection and optimize
+              backend performance in real-time systems.
             </p>
             <div class="reading-box">
               <span class="reading-label">Currently Reading:</span>
               <!-- CHANGE THIS: Paper, book, or survey article title -->
-              <span class="reading-title">"[Paper Title / e.g. Foundations of Deep Learning & Network Traffic Classification]"</span>
+              <span class="reading-title">"[Paper Title / e.g. Foundations of Deep Learning & Network Traffic
+                Classification]"</span>
             </div>
           </div>
 
@@ -310,7 +330,7 @@
          ======================================================================= -->
     <section class="section" id="projects">
       <div class="container">
-        
+
         <div class="section-header">
           <h2 class="section-title">Projects</h2>
           <div class="section-divider"></div>
@@ -325,13 +345,14 @@
           <div class="card project-card">
             <!-- CHANGE THIS: Project Title -->
             <h3 class="card-title">Grand Azure Resort Web Application</h3>
-            
+
             <!-- Problem Statement -->
             <div class="project-detail">
               <span class="detail-label">Problem:</span>
               <p class="card-text">
                 <!-- CHANGE THIS: What problem did this project solve? -->
-                Designed a multi-page, responsive hospitality web interface to provide smooth navigation, room cataloging, and client-side reservation validation without third-party frameworks.
+                Designed a multi-page, responsive hospitality web interface to provide smooth navigation, room
+                cataloging, and client-side reservation validation without third-party frameworks.
               </p>
             </div>
 
@@ -351,16 +372,19 @@
               <span class="detail-label">What I Learned:</span>
               <p class="card-text">
                 <!-- CHANGE THIS: What concept or system design principle did you learn? -->
-                Mastered semantic document structure, CSS Grid/Flexbox responsive layouts, and writing modular vanilla JavaScript for form error checking.
+                Mastered semantic document structure, CSS Grid/Flexbox responsive layouts, and writing modular vanilla
+                JavaScript for form error checking.
               </p>
             </div>
 
             <!-- Links: GitHub and Live Demo -->
             <div class="card-links">
               <!-- CHANGE THIS: GitHub repository link -->
-              <a href="https://github.com/Abdullah91788/hotel-resort-website" class="text-link" target="_blank" rel="noopener noreferrer">GitHub Repo &rarr;</a>
+              <a href="https://github.com/Abdullah91788/hotel-resort-website" class="text-link" target="_blank"
+                rel="noopener noreferrer">GitHub Repo &rarr;</a>
               <!-- CHANGE THIS: Live deployment link -->
-              <a href="https://hotel-resort-website-nine.vercel.app" class="text-link" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+              <a href="https://hotel-resort-website-nine.vercel.app" class="text-link" target="_blank"
+                rel="noopener noreferrer">Live Demo &rarr;</a>
             </div>
           </div>
 
@@ -368,13 +392,14 @@
           <div class="card project-card">
             <!-- CHANGE THIS: Project Title -->
             <h3 class="card-title">Interactive Celebration Web Page</h3>
-            
+
             <!-- Problem Statement -->
             <div class="project-detail">
               <span class="detail-label">Problem:</span>
               <p class="card-text">
                 <!-- CHANGE THIS: Problem addressed -->
-                Built an interactive, visually engaging single-page celebration website using pure CSS keyframe animations and structured layout patterns.
+                Built an interactive, visually engaging single-page celebration website using pure CSS keyframe
+                animations and structured layout patterns.
               </p>
             </div>
 
@@ -393,14 +418,17 @@
               <span class="detail-label">What I Learned:</span>
               <p class="card-text">
                 <!-- CHANGE THIS: What you learned -->
-                Deepened knowledge of CSS animations, coordinate positioning, asset optimization, and mobile browser rendering performance.
+                Deepened knowledge of CSS animations, coordinate positioning, asset optimization, and mobile browser
+                rendering performance.
               </p>
             </div>
 
             <!-- Links -->
             <div class="card-links">
-              <a href="https://github.com/Abdullah91788/My-first-project-" class="text-link" target="_blank" rel="noopener noreferrer">GitHub Repo &rarr;</a>
-              <a href="https://birthday-surprise-eight-ruby.vercel.app" class="text-link" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
+              <a href="https://github.com/Abdullah91788/My-first-project-" class="text-link" target="_blank"
+                rel="noopener noreferrer">GitHub Repo &rarr;</a>
+              <a href="https://birthday-surprise-eight-ruby.vercel.app" class="text-link" target="_blank"
+                rel="noopener noreferrer">Live Demo &rarr;</a>
             </div>
           </div>
 
@@ -408,13 +436,14 @@
           <div class="card project-card">
             <!-- CHANGE THIS: Project Title (e.g. DSA or Networking course project) -->
             <h3 class="card-title">[Academic Course Project: e.g. Network Packet Analyzer / DSA System]</h3>
-            
+
             <!-- Problem Statement -->
             <div class="project-detail">
               <span class="detail-label">Problem:</span>
               <p class="card-text">
                 <!-- CHANGE THIS: Description of the coursework problem -->
-                [Implemented an algorithmic data structure or simulation program in C++/Python to model student records or analyze network socket traffic.]
+                [Implemented an algorithmic data structure or simulation program in C++/Python to model student records
+                or analyze network socket traffic.]
               </p>
             </div>
 
@@ -435,14 +464,16 @@
               <span class="detail-label">What I Learned:</span>
               <p class="card-text">
                 <!-- CHANGE THIS: Core takeaway -->
-                [Gained hands-on experience in memory management, algorithmic time complexity analysis, and modular program design.]
+                [Gained hands-on experience in memory management, algorithmic time complexity analysis, and modular
+                program design.]
               </p>
             </div>
 
             <!-- Links -->
             <div class="card-links">
               <!-- CHANGE THIS: Link or write "(Coursework repository)" -->
-              <a href="https://github.com/Abdullah91788" class="text-link" target="_blank" rel="noopener noreferrer">GitHub Repo &rarr;</a>
+              <a href="https://github.com/Abdullah91788" class="text-link" target="_blank"
+                rel="noopener noreferrer">GitHub Repo &rarr;</a>
               <span class="text-muted">[Live Demo: Local CLI / Not applicable]</span>
             </div>
           </div>
@@ -458,7 +489,7 @@
          ======================================================================= -->
     <section class="section" id="skills">
       <div class="container">
-        
+
         <div class="section-header">
           <h2 class="section-title">Technical Skills</h2>
           <div class="section-divider"></div>
@@ -527,7 +558,7 @@
          ======================================================================= -->
     <section class="section" id="contact">
       <div class="container">
-        
+
         <div class="section-header">
           <h2 class="section-title">Contact</h2>
           <div class="section-divider"></div>
@@ -538,7 +569,7 @@
 
         <!-- Clean, simple academic contact links -->
         <div class="contact-box">
-          
+
           <div class="contact-item">
             <span class="contact-label">Email:</span>
             <!-- CHANGE THIS: Your academic or personal email -->
@@ -548,13 +579,15 @@
           <div class="contact-item">
             <span class="contact-label">GitHub:</span>
             <!-- CHANGE THIS: Your GitHub profile URL -->
-            <a href="https://github.com/Abdullah91788" class="contact-link" target="_blank" rel="noopener noreferrer">github.com/Abdullah91788</a>
+            <a href="https://github.com/Abdullah91788" class="contact-link" target="_blank"
+              rel="noopener noreferrer">github.com/Abdullah91788</a>
           </div>
 
           <div class="contact-item">
             <span class="contact-label">LinkedIn:</span>
             <!-- CHANGE THIS: Your LinkedIn profile URL -->
-            <a href="https://linkedin.com/in/[YOUR-LINKEDIN-HANDLE]" class="contact-link" target="_blank" rel="noopener noreferrer">linkedin.com/in/[YOUR-LINKEDIN-HANDLE]</a>
+            <a href="https://linkedin.com/in/[YOUR-LINKEDIN-HANDLE]" class="contact-link" target="_blank"
+              rel="noopener noreferrer">linkedin.com/in/[YOUR-LINKEDIN-HANDLE]</a>
           </div>
 
           <div class="contact-item">
@@ -578,11 +611,13 @@
     <div class="container footer-container">
       <!-- CHANGE THIS: Year and your name -->
       <p class="footer-copy">&copy; 2026 Abdullah Islam. All rights reserved.</p>
-      
+
       <div class="footer-links">
         <a href="#hero" class="footer-link">Back to Top &uarr;</a>
-        <a href="https://github.com/Abdullah91788" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/[YOUR-LINKEDIN-HANDLE]" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Abdullah91788" class="footer-link" target="_blank"
+          rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/[YOUR-LINKEDIN-HANDLE]" class="footer-link" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
   </footer>
@@ -590,4 +625,5 @@
   <!-- Link to external JavaScript file -->
   <script src="script.js"></script>
 </body>
+
 </html>
