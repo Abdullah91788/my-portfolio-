@@ -597,27 +597,6 @@ ul {
   justify-content: space-between;
 }
 
-.reading-box {
-  margin-top: 1.25rem;
-  padding-top: 0.85rem;
-  border-top: 1px solid var(--border-color);
-  font-size: 0.85rem;
-}
-
-.reading-label {
-  display: block;
-  font-weight: 600;
-  color: var(--text-secondary);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin-bottom: 0.25rem;
-}
-
-.reading-title {
-  color: var(--text-primary);
-  font-style: italic;
-}
 
 
 /* ==========================================================================
