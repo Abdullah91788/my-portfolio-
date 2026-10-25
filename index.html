@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!--
+  <!--
   =============================================================================
   PROJECT: Academic Portfolio Prototype for MS Admission
   AUTHOR: Abdullah Islam
@@ -19,622 +19,729 @@
   =============================================================================
 -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- CHANGE THIS: Title displayed in browser tab -->
-  <title>Abdullah Islam | Academic Portfolio</title>
+    <!-- CHANGE THIS: Title displayed in browser tab -->
+    <title>Abdullah Islam | Academic Portfolio</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png" />
 
-  <!-- SEO & Academic Meta Tags -->
-  <meta name="description"
-    content="Academic portfolio of Abdullah Islam, BS Computer Science student at KKKUK, seeking MS admission in Computer Science.">
-  <meta name="author" content="Abdullah Islam">
+    <!-- SEO & Academic Meta Tags -->
+    <meta
+      name="description"
+      content="Academic portfolio of Abdullah Islam, BS Computer Science student at KKKUK, seeking MS admission in Computer Science."
+    />
+    <meta name="author" content="Abdullah Islam" />
 
-  <!-- Link to external stylesheet -->
-  <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-  <!-- =======================================================================
+  <body>
+    <!-- =======================================================================
        NAVBAR SECTION: Sticky top navigation with links and CV download button
        ======================================================================= -->
-  <header class="header">
-    <div class="nav-container">
-      <!-- CHANGE THIS: Logo / your initials or name -->
-      <a href="#hero" class="nav-logo" aria-label="Home">
-        <img src="images/logo.png" alt="Abdullah Islam Logo" class="nav-logo-img">
-        <span>Abdullah Islam</span>
-      </a>
+    <header class="header">
+      <div class="nav-container">
+        <!-- CHANGE THIS: Logo / your initials or name -->
+        <a href="#hero" class="nav-logo" aria-label="Home">
+          <img
+            src="images/logo.png"
+            alt="Abdullah Islam Logo"
+            class="nav-logo-img"
+          />
+          <span>Abdullah Islam</span>
+        </a>
 
-      <!-- Mobile Hamburger Button (visible on screens narrower than 768px) -->
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-      </button>
-
-      <!-- Navigation Links -->
-      <nav class="nav-menu" id="navMenu">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-          <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#wechat" class="nav-link">WeChat</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-
-        <!-- Theme Toggle Button (Moon in light mode, Sun in dark mode) -->
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
-          <span id="themeIcon">🌙</span>
+        <!-- Mobile Hamburger Button (visible on screens narrower than 768px) -->
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
         </button>
 
-        <!-- CV Download Button in header -->
-        <a href="Abdullah_Islam_CV.pdf" class="btn btn-outline nav-btn" download="Abdullah_Islam_CV.pdf">Download CV</a>
-      </nav>
-    </div>
-  </header>
+        <!-- Navigation Links -->
+        <nav class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#research" class="nav-link">Research</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#wechat" class="nav-link">WeChat</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
 
-  <!-- Main Content Wrapper (Semantic <main> for accessibility) -->
-  <main>
+          <!-- Theme Toggle Button (Moon in light mode, Sun in dark mode) -->
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark/light theme"
+            title="Toggle theme"
+          >
+            <span id="themeIcon">🌙</span>
+          </button>
 
-    <!-- =======================================================================
+          <!-- CV Download Button in header -->
+          <a
+            href="Abdullah_Islam_CV.pdf"
+            class="btn btn-outline nav-btn"
+            download="Abdullah_Islam_CV.pdf"
+            >Download CV</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Wrapper (Semantic <main> for accessibility) -->
+    <main>
+      <!-- =======================================================================
          HERO SECTION: Greeting, one-line summary, quick action buttons
          ======================================================================= -->
-    <section class="section hero-section" id="hero">
-      <div class="container hero-container">
+      <section class="section hero-section" id="hero">
+        <div class="container hero-container">
+          <!-- Profile Picture in Hero Section -->
+          <div class="hero-avatar-wrapper">
+            <div class="hero-avatar" aria-label="Photo of Abdullah Islam">
+              <img
+                src="images/1792652624278.jpg"
+                alt="Photo of Abdullah Islam"
+                class="hero-avatar-img"
+              />
+            </div>
+          </div>
 
-        <!-- Profile Picture in Hero Section -->
-        <div class="hero-avatar-wrapper">
-          <div class="hero-avatar" aria-label="Photo of Abdullah Islam">
-            <img src="images/1792652624278.jpg" alt="Photo of Abdullah Islam" class="hero-avatar-img">
+          <div class="hero-text">
+            <!-- CHANGE THIS: Your full name -->
+            <h1 class="hero-title">Abdullah Islam</h1>
+
+            <!-- One-line academic headline -->
+            <p class="hero-tagline">
+              BS Computer Science student at KKKUK | Interested in networking,
+              cloud and AI
+            </p>
+
+            <!-- Quick Action Buttons -->
+            <div class="hero-buttons">
+              <!-- Primary Action: Download CV -->
+              <a
+                href="Abdullah_Islam_CV.pdf"
+                class="btn btn-primary"
+                download="Abdullah_Islam_CV.pdf"
+                >Download CV</a
+              >
+
+              <!-- Secondary Links: GitHub, LinkedIn, Email -->
+              <!-- CHANGE THIS: Replace with your actual profile URLs -->
+              <a
+                href="https://github.com/Abdullah91788"
+                class="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/abdullah-islam-44a0b4360/"
+                class="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                href="mailto:abdullahkhattak029@gmail.com"
+                class="btn btn-secondary"
+                >Email</a
+              >
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="hero-text">
-          <!-- CHANGE THIS: Your full name -->
-          <h1 class="hero-title">Abdullah Islam</h1>
-
-          <!-- One-line academic headline -->
-          <p class="hero-tagline">
-            BS Computer Science student at KKKUK | Interested in networking, cloud and AI
-          </p>
-
-          <!-- Quick Action Buttons -->
-          <div class="hero-buttons">
-            <!-- Primary Action: Download CV -->
-            <a href="Abdullah_Islam_CV.pdf" class="btn btn-primary" download="Abdullah_Islam_CV.pdf">Download CV</a>
-
-            <!-- Secondary Links: GitHub, LinkedIn, Email -->
-            <!-- CHANGE THIS: Replace with your actual profile URLs -->
-            <a href="https://github.com/Abdullah91788" class="btn btn-secondary" target="_blank"
-              rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/abdullah-islam-44a0b4360/" class="btn btn-secondary" target="_blank"
-              rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:abdullahkhattak029@gmail.com" class="btn btn-secondary">Email</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =======================================================================
+      <!-- =======================================================================
          ABOUT SECTION: Short bio and 3 quick-fact cards
          ======================================================================= -->
-    <section class="section" id="about">
-      <div class="container">
-
-        <!-- Section Header pattern used across all sections for consistency -->
-        <div class="section-header">
-          <h2 class="section-title">About Me</h2>
-          <div class="section-divider"></div>
-        </div>
-
-        <!-- 4 to 5 line academic bio placeholder -->
-        <!-- CHANGE THIS: Tailor this bio to your specific background and MS goals -->
-        <div class="about-bio">
-          <p>
-            I am a final-year undergraduate student pursuing a Bachelor of Science in Computer Science at Khushal Khan
-            Khattak University Karak (KKKUK).
-            My academic focus revolves around computer networking, distributed systems, and modern software engineering
-            principles.
-            Throughout my coursework and independent projects, I have developed a strong foundation in core algorithms,
-            object-oriented design, and practical web systems.
-            I am currently preparing for Master's degree studies to engage in applied systems research and deepen my
-            understanding of scalable cloud architectures.
-          </p>
-        </div>
-
-        <!-- 3 Quick-Fact Cards -->
-        <div class="facts-grid">
-
-          <!-- Fact 1: University -->
-          <div class="fact-card">
-            <span class="fact-label">University</span>
-            <!-- CHANGE THIS: University name if needed -->
-            <p class="fact-value">Khushal Khan Khattak University Karak (KKKUK)</p>
+      <section class="section" id="about">
+        <div class="container">
+          <!-- Section Header pattern used across all sections for consistency -->
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-divider"></div>
           </div>
 
-          <!-- Fact 2: Academic Standing / CGPA -->
-          <div class="fact-card">
-            <span class="fact-label">Academic Standing</span>
-            <!-- CHANGE THIS: Your current verified CGPA -->
-            <p class="fact-value">CGPA: 3.6 / 4.0</p>
+          <!-- 4 to 5 line academic bio placeholder -->
+          <!-- CHANGE THIS: Tailor this bio to your specific background and MS goals -->
+          <div class="about-bio">
+            <p>
+              I am a final-year undergraduate student pursuing a Bachelor of
+              Science in Computer Science at Khushal Khan Khattak University
+              Karak (KKKUK). My academic focus revolves around computer
+              networking, distributed systems, and modern software engineering
+              principles. Throughout my coursework and independent projects, I
+              have developed a strong foundation in core algorithms,
+              object-oriented design, and practical web systems. I am currently
+              preparing for Master's degree studies to engage in applied systems
+              research and deepen my understanding of scalable cloud
+              architectures.
+            </p>
           </div>
 
-          <!-- Fact 3: Expected Graduation -->
-          <div class="fact-card">
-            <span class="fact-label">Expected Graduation</span>
-            <!-- CHANGE THIS: Your expected graduation month and year -->
-            <p class="fact-value">[Expected: September 2027]</p>
-          </div>
+          <!-- 3 Quick-Fact Cards -->
+          <div class="facts-grid">
+            <!-- Fact 1: University -->
+            <div class="fact-card">
+              <span class="fact-label">University</span>
+              <!-- CHANGE THIS: University name if needed -->
+              <p class="fact-value">
+                Khushal Khan Khattak University Karak (KKKUK)
+              </p>
+            </div>
 
+            <!-- Fact 2: Academic Standing / CGPA -->
+            <div class="fact-card">
+              <span class="fact-label">Academic Standing</span>
+              <!-- CHANGE THIS: Your current verified CGPA -->
+              <p class="fact-value">CGPA: 3.6 / 4.0</p>
+            </div>
+
+            <!-- Fact 3: Expected Graduation -->
+            <div class="fact-card">
+              <span class="fact-label">Expected Graduation</span>
+              <!-- CHANGE THIS: Your expected graduation month and year -->
+              <p class="fact-value">[Expected: September 2027]</p>
+            </div>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-
-    <!-- =======================================================================
+      <!-- =======================================================================
          EDUCATION SECTION: Vertical timeline and coursework tags
          ======================================================================= -->
-    <section class="section" id="education">
-      <div class="container">
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <div class="section-divider"></div>
+          </div>
 
-        <div class="section-header">
-          <h2 class="section-title">Education</h2>
-          <div class="section-divider"></div>
-        </div>
+          <!-- Vertical Timeline (Text only, clean and academic) -->
+          <div class="timeline">
+            <!-- Degree 1: Current BS Degree -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <!-- CHANGE THIS: Dates for BS Degree -->
+                <span class="timeline-date">[2023 - Present]</span>
+                <h3 class="timeline-title">
+                  Bachelor of Science in Computer Science
+                </h3>
+                <p class="timeline-institution">
+                  Khushal Khan Khattak University Karak (KKKUK)
+                </p>
+                <p class="timeline-notes">
+                  Current CGPA: 3.6 / 4.0 | Focus: Software Systems & Networking
+                </p>
+              </div>
+            </div>
 
-        <!-- Vertical Timeline (Text only, clean and academic) -->
-        <div class="timeline">
+            <!-- Degree 2: Intermediate / FSc -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <!-- CHANGE THIS: College name, location, and dates -->
+                <span class="timeline-date">[2020 - 2022]</span>
+                <h3 class="timeline-title">FSc Pre-Engineering</h3>
+                <p class="timeline-institution">
+                  Karak Smart School, Karak, Pakistan
+                </p>
+                <p class="timeline-notes">Grade / Percentage: 87.9% , A+</p>
+              </div>
+            </div>
 
-          <!-- Degree 1: Current BS Degree -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <!-- CHANGE THIS: Dates for BS Degree -->
-              <span class="timeline-date">[2023 - Present]</span>
-              <h3 class="timeline-title">Bachelor of Science in Computer Science</h3>
-              <p class="timeline-institution">Khushal Khan Khattak University Karak (KKKUK)</p>
-              <p class="timeline-notes">Current CGPA: 3.6 / 4.0 | Focus: Software Systems & Networking</p>
+            <!-- Degree 3: Matriculation / Secondary School -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <!-- CHANGE THIS: School name, location, and dates -->
+                <span class="timeline-date">[2018 - 2020]</span>
+                <h3 class="timeline-title">Matriculation (Science)</h3>
+                <p class="timeline-institution">
+                  Blue Birds Academy, Karak, Pakistan
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Degree 2: Intermediate / FSc -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <!-- CHANGE THIS: College name, location, and dates -->
-              <span class="timeline-date">[2020 - 2022]</span>
-              <h3 class="timeline-title">FSc Pre-Engineering </h3>
-              <p class="timeline-institution">Karak Smart School, Karak, Pakistan</p>
-              <p class="timeline-notes">Grade / Percentage: 87.91% , A+</p>
+          <!-- Relevant Coursework Tags Under Timeline -->
+          <div class="coursework-box">
+            <h4 class="coursework-heading">Relevant Coursework</h4>
+            <div class="tags-wrapper">
+              <!-- CHANGE THIS: Add or remove courses based on your official university transcript -->
+              <span class="tag">Data Structures & Algorithms</span>
+              <span class="tag">Object-Oriented Programming (C++)</span>
+              <span class="tag">Database Systems (SQL)</span>
+              <span class="tag">Computer Networks</span>
+              <span class="tag">Operating Systems</span>
+              <span class="tag">Web Technologies</span>
+              <span class="tag">Software Engineering</span>
+              <span class="tag">Discrete Mathematics</span>
             </div>
           </div>
-
-          <!-- Degree 3: Matriculation / Secondary School -->
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <!-- CHANGE THIS: School name, location, and dates -->
-              <span class="timeline-date">[2018 - 2020]</span>
-              <h3 class="timeline-title">Matriculation (Science)</h3>
-              <p class="timeline-institution">Blue Birds Academey, Karak, Pakistan</p>
-
-            </div>
-          </div>
-
         </div>
+      </section>
 
-        <!-- Relevant Coursework Tags Under Timeline -->
-        <div class="coursework-box">
-          <h4 class="coursework-heading">Relevant Coursework</h4>
-          <div class="tags-wrapper">
-            <!-- CHANGE THIS: Add or remove courses based on your official university transcript -->
-            <span class="tag">Data Structures & Algorithms</span>
-            <span class="tag">Object-Oriented Programming (C++)</span>
-            <span class="tag">Database Systems (SQL)</span>
-            <span class="tag">Computer Networks</span>
-            <span class="tag">Operating Systems</span>
-            <span class="tag">Web Technologies</span>
-            <span class="tag">Software Engineering</span>
-            <span class="tag">Discrete Mathematics</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =======================================================================
+      <!-- =======================================================================
          RESEARCH INTERESTS SECTION: 3 cards showing target MS research areas
          ======================================================================= -->
-    <section class="section" id="research">
-      <div class="container">
+      <section class="section" id="research">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+              Topics I aim to explore during graduate studies .
+            </p>
+          </div>
 
-        <div class="section-header">
-          <h2 class="section-title">Research Interests</h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">
-            Topics I aim to explore during graduate studies, with relevant literature I am currently reading.
-          </p>
+          <div class="cards-grid">
+            <!-- Interest Card 1: Cloud & Distributed Systems -->
+            <div class="card research-card">
+              <!-- CHANGE THIS: Research Topic Title -->
+              <h3 class="card-title">Cloud & Distributed Systems</h3>
+              <p class="card-text">
+                <!-- CHANGE THIS: 1-2 lines on why this area interests you -->
+                I deploy my web projects on platforms like Vercel and GitHub
+                Pages, and I want to understand what happens behind such
+                services: servers, storage and scaling. I am at an early stage
+                of learning cloud concepts. Currently studying: cloud service
+                models (IaaS, PaaS, SaaS), deployment basics .
+              </p>
+            </div>
+
+            <!-- Interest Card 2: Computer Networks & Security -->
+            <div class="card research-card">
+              <!-- CHANGE THIS: Research Topic Title -->
+              <h3 class="card-title">Computer Networks & Security</h3>
+              <p class="card-text">
+                <!-- CHANGE THIS: 1-2 lines on why this area interests you -->
+                I became interested in networking through my Computer Networks
+                course, where I studied how TCP/IP, DNS and HTTP work. I want to
+                understand how data travels across the internet efficiently and
+                securely, and I hope to explore this in more depth during
+                graduate studies. Currently studying: TCP/IP, DNS, routing
+                basics
+              </p>
+            </div>
+
+            <!-- Interest Card 3: Applied Artificial Intelligence -->
+            <div class="card research-card">
+              <!-- CHANGE THIS: Research Topic Title -->
+              <h3 class="card-title">Applied AI & Intelligent Systems</h3>
+              <p class="card-text">
+                <!-- CHANGE THIS: 1-2 lines on why this area interests you -->
+                I am interested in how machine learning can help detect problems
+                in networks and software systems. I am currently learning the
+                fundamentals of machine learning before exploring this area
+                further. Currently studying: machine learning fundamentals
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="cards-grid">
-
-          <!-- Interest Card 1: Cloud & Distributed Systems -->
-          <div class="card research-card">
-            <!-- CHANGE THIS: Research Topic Title -->
-            <h3 class="card-title">Cloud & Distributed Systems</h3>
-            <p class="card-text">
-              <!-- CHANGE THIS: 1-2 lines on why this area interests you -->
-              I deploy my web projects on platforms like Vercel and GitHub Pages, and I want to understand what happens
-              behind such services: servers, storage and scaling. I am at an early stage of learning cloud concepts.
-              Currently studying: cloud service models (IaaS, PaaS, SaaS), deployment basics .
-            </p>
-          </div>
-
-          <!-- Interest Card 2: Computer Networks & Security -->
-          <div class="card research-card">
-            <!-- CHANGE THIS: Research Topic Title -->
-            <h3 class="card-title">Computer Networks & Security</h3>
-            <p class="card-text">
-              <!-- CHANGE THIS: 1-2 lines on why this area interests you -->
-              Exploring next-generation routing protocols, software-defined networking (SDN), and latency reduction
-              strategies in edge-to-cloud communications.
-            </p>
-          </div>
-
-          <!-- Interest Card 3: Applied Artificial Intelligence -->
-          <div class="card research-card">
-            <!-- CHANGE THIS: Research Topic Title -->
-            <h3 class="card-title">Applied AI & Intelligent Systems</h3>
-            <p class="card-text">
-              <!-- CHANGE THIS: 1-2 lines on why this area interests you -->
-              Fascinated by applying machine learning algorithms to automate network anomaly detection and optimize
-              backend performance in real-time systems.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =======================================================================
+      <!-- =======================================================================
          PROJECTS SECTION: 3 cards showing practical software development
          ======================================================================= -->
-    <section class="section" id="projects">
-      <div class="container">
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+              Selected academic and self-directed software projects
+              demonstrating practical implementation skills.
+            </p>
+          </div>
 
-        <div class="section-header">
-          <h2 class="section-title">Projects</h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">
-            Selected academic and self-directed software projects demonstrating practical implementation skills.
-          </p>
+          <div class="cards-grid">
+            <!-- Project Card 1: Hotel & Resort Web Application -->
+            <div class="card project-card">
+              <!-- CHANGE THIS: Project Title -->
+              <h3 class="card-title">Grand Azure Resort Web Application</h3>
+
+              <!-- Problem Statement -->
+              <div class="project-detail">
+                <span class="detail-label">Problem:</span>
+                <p class="card-text">
+                  <!-- CHANGE THIS: What problem did this project solve? -->
+                  Designed a multi-page, responsive hospitality web interface to
+                  provide smooth navigation, room cataloging, and client-side
+                  reservation validation without third-party frameworks.
+                </p>
+              </div>
+
+              <!-- Tech Used (Small Tags) -->
+              <div class="project-detail">
+                <span class="detail-label">Technologies:</span>
+                <div class="tags-wrapper">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">Vanilla JS</span>
+                  <span class="tag">Responsive UI</span>
+                </div>
+              </div>
+
+              <!-- What I Learned -->
+              <div class="project-detail">
+                <span class="detail-label">What I Learned:</span>
+                <p class="card-text">
+                  <!-- CHANGE THIS: What concept or system design principle did you learn? -->
+                  Mastered semantic document structure, CSS Grid/Flexbox
+                  responsive layouts, and writing modular vanilla JavaScript for
+                  form error checking.
+                </p>
+              </div>
+
+              <!-- Links: GitHub and Live Demo -->
+              <div class="card-links">
+                <!-- CHANGE THIS: GitHub repository link -->
+                <a
+                  href="https://github.com/Abdullah91788/hotel-resort-website"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repo &rarr;</a
+                >
+                <!-- CHANGE THIS: Live deployment link -->
+                <a
+                  href="https://hotel-resort-website-nine.vercel.app/"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo &rarr;</a
+                >
+              </div>
+            </div>
+
+            <!-- Project Card 2: Interactive Web Application -->
+            <div class="card project-card">
+              <!-- CHANGE THIS: Project Title -->
+              <h3 class="card-title">Interactive Celebration Web Page</h3>
+
+              <!-- Problem Statement -->
+              <div class="project-detail">
+                <span class="detail-label">Problem:</span>
+                <p class="card-text">
+                  <!-- CHANGE THIS: Problem addressed -->
+                  Built an interactive, visually engaging single-page
+                  celebration website using pure CSS keyframe animations and
+                  structured layout patterns.
+                </p>
+              </div>
+
+              <!-- Tech Used -->
+              <div class="project-detail">
+                <span class="detail-label">Technologies:</span>
+                <div class="tags-wrapper">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3 Animations</span>
+                  <span class="tag">Responsive Design</span>
+                </div>
+              </div>
+
+              <!-- What I Learned -->
+              <div class="project-detail">
+                <span class="detail-label">What I Learned:</span>
+                <p class="card-text">
+                  <!-- CHANGE THIS: What you learned -->
+                  Deepened knowledge of CSS animations, coordinate positioning,
+                  asset optimization, and mobile browser rendering performance.
+                </p>
+              </div>
+
+              <!-- Links -->
+              <div class="card-links">
+                <a
+                  href="https://github.com/Abdullah91788/My-first-project-"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repo &rarr;</a
+                >
+                <a
+                  href="https://abdullah-birthday-2026.vercel.app/"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo &rarr;</a
+                >
+              </div>
+            </div>
+
+            <!-- Project Card 3: Personal Portfolio Website -->
+            <div class="card project-card">
+              <!-- Project Title -->
+              <h3 class="card-title">Personal Portfolio Website</h3>
+
+              <!-- Problem Statement -->
+              <div class="project-detail">
+                <span class="detail-label">Problem:</span>
+                <p class="card-text">
+                  Designed and developed a responsive, accessible personal
+                  portfolio website to effectively showcase academic background,
+                  technical skills, research interests, and software projects.
+                </p>
+              </div>
+
+              <!-- Tech Used -->
+              <div class="project-detail">
+                <span class="detail-label">Technologies:</span>
+                <div class="tags-wrapper">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Responsive Design</span>
+                </div>
+              </div>
+
+              <!-- What I Learned -->
+              <div class="project-detail">
+                <span class="detail-label">What I Learned:</span>
+                <p class="card-text">
+                  Strengthened core front-end engineering principles by building
+                  a modern website using HTML, CSS, and JavaScript with semantic
+                  structure, custom CSS variables, theme switching, and
+                  responsive layout design.
+                </p>
+              </div>
+
+              <!-- Links -->
+              <div class="card-links">
+                <a
+                  href="https://github.com/Abdullah91788/my-portfolio-"
+                  class="text-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repo &rarr;</a
+                >
+                <a href="#hero" class="text-link">Live Demo &rarr;</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="cards-grid">
-
-          <!-- Project Card 1: Hotel & Resort Web Application -->
-          <div class="card project-card">
-            <!-- CHANGE THIS: Project Title -->
-            <h3 class="card-title">Grand Azure Resort Web Application</h3>
-
-            <!-- Problem Statement -->
-            <div class="project-detail">
-              <span class="detail-label">Problem:</span>
-              <p class="card-text">
-                <!-- CHANGE THIS: What problem did this project solve? -->
-                Designed a multi-page, responsive hospitality web interface to provide smooth navigation, room
-                cataloging, and client-side reservation validation without third-party frameworks.
-              </p>
-            </div>
-
-            <!-- Tech Used (Small Tags) -->
-            <div class="project-detail">
-              <span class="detail-label">Technologies:</span>
-              <div class="tags-wrapper">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-                <span class="tag">Vanilla JS</span>
-                <span class="tag">Responsive UI</span>
-              </div>
-            </div>
-
-            <!-- What I Learned -->
-            <div class="project-detail">
-              <span class="detail-label">What I Learned:</span>
-              <p class="card-text">
-                <!-- CHANGE THIS: What concept or system design principle did you learn? -->
-                Mastered semantic document structure, CSS Grid/Flexbox responsive layouts, and writing modular vanilla
-                JavaScript for form error checking.
-              </p>
-            </div>
-
-            <!-- Links: GitHub and Live Demo -->
-            <div class="card-links">
-              <!-- CHANGE THIS: GitHub repository link -->
-              <a href="https://github.com/Abdullah91788/hotel-resort-website" class="text-link" target="_blank"
-                rel="noopener noreferrer">GitHub Repo &rarr;</a>
-              <!-- CHANGE THIS: Live deployment link -->
-              <a href="https://hotel-resort-website-nine.vercel.app/" class="text-link" target="_blank"
-                rel="noopener noreferrer">Live Demo &rarr;</a>
-            </div>
-          </div>
-
-          <!-- Project Card 2: Interactive Web Application -->
-          <div class="card project-card">
-            <!-- CHANGE THIS: Project Title -->
-            <h3 class="card-title">Interactive Celebration Web Page</h3>
-
-            <!-- Problem Statement -->
-            <div class="project-detail">
-              <span class="detail-label">Problem:</span>
-              <p class="card-text">
-                <!-- CHANGE THIS: Problem addressed -->
-                Built an interactive, visually engaging single-page celebration website using pure CSS keyframe
-                animations and structured layout patterns.
-              </p>
-            </div>
-
-            <!-- Tech Used -->
-            <div class="project-detail">
-              <span class="detail-label">Technologies:</span>
-              <div class="tags-wrapper">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3 Animations</span>
-                <span class="tag">Responsive Design</span>
-              </div>
-            </div>
-
-            <!-- What I Learned -->
-            <div class="project-detail">
-              <span class="detail-label">What I Learned:</span>
-              <p class="card-text">
-                <!-- CHANGE THIS: What you learned -->
-                Deepened knowledge of CSS animations, coordinate positioning, asset optimization, and mobile browser
-                rendering performance.
-              </p>
-            </div>
-
-            <!-- Links -->
-            <div class="card-links">
-              <a href="https://github.com/Abdullah91788/My-first-project-" class="text-link" target="_blank"
-                rel="noopener noreferrer">GitHub Repo &rarr;</a>
-              <a href="https://abdullah-birthday-2026.vercel.app/" class="text-link" target="_blank"
-                rel="noopener noreferrer">Live Demo &rarr;</a>
-            </div>
-          </div>
-
-          <!-- Project Card 3: Personal Portfolio Website -->
-          <div class="card project-card">
-            <!-- Project Title -->
-            <h3 class="card-title">Personal Portfolio Website</h3>
-
-            <!-- Problem Statement -->
-            <div class="project-detail">
-              <span class="detail-label">Problem:</span>
-              <p class="card-text">
-                Designed and developed a responsive, accessible personal portfolio website to effectively showcase
-                academic background, technical skills, research interests, and software projects.
-              </p>
-            </div>
-
-            <!-- Tech Used -->
-            <div class="project-detail">
-              <span class="detail-label">Technologies:</span>
-              <div class="tags-wrapper">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Responsive Design</span>
-              </div>
-            </div>
-
-            <!-- What I Learned -->
-            <div class="project-detail">
-              <span class="detail-label">What I Learned:</span>
-              <p class="card-text">
-                Strengthened core front-end engineering principles by building a modern website using HTML, CSS, and
-                JavaScript with semantic structure, custom CSS variables, theme switching, and responsive layout design.
-              </p>
-            </div>
-
-            <!-- Links -->
-            <div class="card-links">
-              <a href="https://github.com/Abdullah91788/my-portfolio-" class="text-link" target="_blank"
-                rel="noopener noreferrer">GitHub Repo &rarr;</a>
-              <a href="#hero" class="text-link">Live Demo &rarr;</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =======================================================================
+      <!-- =======================================================================
          SKILLS SECTION: Grouped lists with small neutral tags (no progress bars)
          ======================================================================= -->
-    <section class="section" id="skills">
-      <div class="container">
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-divider"></div>
+          </div>
 
-        <div class="section-header">
-          <h2 class="section-title">Technical Skills</h2>
-          <div class="section-divider"></div>
+          <div class="skills-grid">
+            <!-- Group 1: Programming Languages -->
+            <div class="skill-group">
+              <h3 class="skill-group-title">Programming Languages</h3>
+              <div class="tags-wrapper">
+                <!-- CHANGE THIS: Add or remove programming languages you know -->
+                <span class="tag">C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript (ES6+)</span>
+                <span class="tag">React.Js</span>
+                <span class="tag">SQL</span>
+              </div>
+            </div>
+
+            <!-- Group 2: Web Technologies -->
+            <div class="skill-group">
+              <h3 class="skill-group-title">Web Technologies</h3>
+              <div class="tags-wrapper">
+                <!-- CHANGE THIS: Web technologies -->
+                <span class="tag">HTML5 (Semantic)</span>
+                <span class="tag">CSS3 (Grid & Flexbox)</span>
+                <span class="tag">Vanilla JavaScript</span>
+                <span class="tag">DOM Manipulation</span>
+                <span class="tag">REST API Fundamentals</span>
+              </div>
+            </div>
+
+            <!-- Group 3: Tools & Workflow -->
+            <div class="skill-group">
+              <h3 class="skill-group-title">Tools & Workflow</h3>
+              <div class="tags-wrapper">
+                <!-- CHANGE THIS: Development tools -->
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">Google Antigravity</span>
+                <span class="tag">Vercel</span>
+              </div>
+            </div>
+
+            <!-- Group 4: Networking & Cloud Basics -->
+            <div class="skill-group">
+              <h3 class="skill-group-title">Networking & Cloud Basics</h3>
+              <div class="tags-wrapper">
+                <!-- CHANGE THIS: Core system and networking concepts -->
+                <span class="tag">TCP/IP Protocol Suite</span>
+                <span class="tag">HTTP/HTTPS & DNS</span>
+                <span class="tag">Client-Server Architecture</span>
+                <span class="tag">Cloud Computing Concepts</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="skills-grid">
-
-          <!-- Group 1: Programming Languages -->
-          <div class="skill-group">
-            <h3 class="skill-group-title">Programming Languages</h3>
-            <div class="tags-wrapper">
-              <!-- CHANGE THIS: Add or remove programming languages you know -->
-              <span class="tag">C++</span>
-              <span class="tag">Python</span>
-              <span class="tag">JavaScript (ES6+)</span>
-              <span class="tag">React.Js</span>
-              <span class="tag">SQL</span>
-            </div>
-          </div>
-
-          <!-- Group 2: Web Technologies -->
-          <div class="skill-group">
-            <h3 class="skill-group-title">Web Technologies</h3>
-            <div class="tags-wrapper">
-              <!-- CHANGE THIS: Web technologies -->
-              <span class="tag">HTML5 (Semantic)</span>
-              <span class="tag">CSS3 (Grid & Flexbox)</span>
-              <span class="tag">Vanilla JavaScript</span>
-              <span class="tag">DOM Manipulation</span>
-              <span class="tag">REST API Fundamentals</span>
-            </div>
-          </div>
-
-          <!-- Group 3: Tools & Workflow -->
-          <div class="skill-group">
-            <h3 class="skill-group-title">Tools & Workflow</h3>
-            <div class="tags-wrapper">
-              <!-- CHANGE THIS: Development tools -->
-              <span class="tag">Git</span>
-              <span class="tag">GitHub</span>
-              <span class="tag">VS Code</span>
-              <span class="tag">Google Antigravity</span>
-              <span class="tag">Vercel</span>
-            </div>
-          </div>
-
-          <!-- Group 4: Networking & Cloud Basics -->
-          <div class="skill-group">
-            <h3 class="skill-group-title">Networking & Cloud Basics</h3>
-            <div class="tags-wrapper">
-              <!-- CHANGE THIS: Core system and networking concepts -->
-              <span class="tag">TCP/IP Protocol Suite</span>
-              <span class="tag">HTTP/HTTPS & DNS</span>
-              <span class="tag">Client-Server Architecture</span>
-              <span class="tag">Cloud Computing Concepts</span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =======================================================================
+      <!-- =======================================================================
          WECHAT SECTION: Dedicated WeChat connection and QR code
          ======================================================================= -->
-    <section class="section" id="wechat">
-      <div class="container">
-
-        <div class="section-header">
-          <h2 class="section-title">Connect on WeChat</h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">
-            Scan this QR code to connect with me on WeChat.
-          </p>
-        </div>
-
-        <div class="wechat-card-wrapper">
-          <div class="card wechat-card">
-            <div class="wechat-qr-wrapper">
-              <img src="images/wechat%20qr%20code.png" alt="WeChat QR Code for Abdullah Islam" class="wechat-qr-img"
-                width="220" height="auto">
-            </div>
-            <p class="wechat-instruction">
+      <section class="section" id="wechat">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Connect on WeChat</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
               Scan this QR code to connect with me on WeChat.
             </p>
           </div>
+
+          <div class="wechat-card-wrapper">
+            <div class="card wechat-card">
+              <div class="wechat-qr-wrapper">
+                <img
+                  src="images/wechat%20qr%20code.png"
+                  alt="WeChat QR Code for Abdullah Islam"
+                  class="wechat-qr-img"
+                  width="220"
+                  height="auto"
+                />
+              </div>
+              <p class="wechat-instruction">
+                Scan this QR code to connect with me on WeChat.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-
-    <!-- =======================================================================
+      <!-- =======================================================================
          CONTACT SECTION: Academic inquiry links (no complicated form)
          ======================================================================= -->
-    <section class="section" id="contact">
-      <div class="container">
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Contact</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+              I am always open to discussing academic research, graduate
+              opportunities, and software projects.
+            </p>
+          </div>
 
-        <div class="section-header">
-          <h2 class="section-title">Contact</h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">
-            I am always open to discussing academic research, graduate opportunities, and software projects.
-          </p>
+          <!-- Clean, simple academic contact links -->
+          <div class="contact-box">
+            <div class="contact-item">
+              <span class="contact-label">Email:</span>
+              <a href="mailto:abdullahkhattak029@gmail.com" class="contact-link"
+                >abdullahkhattak029@gmail.com</a
+              >
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">GitHub:</span>
+              <!-- CHANGE THIS: Your GitHub profile URL -->
+              <a
+                href="https://github.com/Abdullah91788"
+                class="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com/Abdullah91788</a
+              >
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">LinkedIn:</span>
+              <!-- CHANGE THIS: Your LinkedIn profile URL -->
+              <a
+                href="https://www.linkedin.com/in/abdullah-islam-44a0b4360/"
+                class="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >linkedin.com/in/abdullah-islam-44a0b4360</a
+              >
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">Curriculum Vitae:</span>
+              <!-- Link to download CV -->
+              <a
+                href="Abdullah_Islam_CV.pdf"
+                class="contact-link"
+                download="Abdullah_Islam_CV.pdf"
+                >Download CV &darr;</a
+              >
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <!-- Clean, simple academic contact links -->
-        <div class="contact-box">
-
-          <div class="contact-item">
-            <span class="contact-label">Email:</span>
-            <a href="mailto:abdullahkhattak029@gmail.com" class="contact-link">abdullahkhattak029@gmail.com</a>
-          </div>
-
-          <div class="contact-item">
-            <span class="contact-label">GitHub:</span>
-            <!-- CHANGE THIS: Your GitHub profile URL -->
-            <a href="https://github.com/Abdullah91788" class="contact-link" target="_blank"
-              rel="noopener noreferrer">github.com/Abdullah91788</a>
-          </div>
-
-          <div class="contact-item">
-            <span class="contact-label">LinkedIn:</span>
-            <!-- CHANGE THIS: Your LinkedIn profile URL -->
-            <a href="https://www.linkedin.com/in/abdullah-islam-44a0b4360/" class="contact-link" target="_blank"
-              rel="noopener noreferrer">linkedin.com/in/abdullah-islam-44a0b4360</a>
-          </div>
-
-          <div class="contact-item">
-            <span class="contact-label">Curriculum Vitae:</span>
-            <!-- Link to download CV -->
-            <a href="Abdullah_Islam_CV.pdf" class="contact-link" download="Abdullah_Islam_CV.pdf">Download CV &darr;</a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- =======================================================================
+    <!-- =======================================================================
        FOOTER SECTION: Copyright notice and simple social links
        ======================================================================= -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <!-- CHANGE THIS: Year and your name -->
-      <p class="footer-copy">&copy; 2026 Abdullah Islam. All rights reserved.</p>
+    <footer class="footer">
+      <div class="container footer-container">
+        <!-- CHANGE THIS: Year and your name -->
+        <p class="footer-copy">
+          &copy; 2026 Abdullah Islam. All rights reserved.
+        </p>
 
-      <div class="footer-links">
-        <a href="#hero" class="footer-link">Back to Top &uarr;</a>
-        <a href="https://github.com/Abdullah91788" class="footer-link" target="_blank"
-          rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/abdullah-islam-44a0b4360/" class="footer-link" target="_blank"
-          rel="noopener noreferrer">LinkedIn</a>
+        <div class="footer-links">
+          <a href="#hero" class="footer-link">Back to Top &uarr;</a>
+          <a
+            href="https://github.com/Abdullah91788"
+            class="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/abdullah-islam-44a0b4360/"
+            class="footer-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Link to external JavaScript file -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
 </html>
