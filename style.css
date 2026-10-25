@@ -172,6 +172,9 @@ ul {
   border: 1px solid transparent;
   transition: var(--transition);
   text-align: center;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
 }
 
 /* Primary Button (Deep Blue filled) */
@@ -278,10 +281,28 @@ ul {
 
 /* Name logo on top left */
 .nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--text-primary);
   letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.nav-logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.nav-logo:hover .nav-logo-img {
+  transform: scale(1.05);
 }
 
 .nav-logo:hover {
@@ -704,6 +725,10 @@ ul {
   color: var(--accent);
   font-weight: 500;
   word-break: break-all;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
 }
 
 .contact-link:hover,

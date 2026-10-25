@@ -140,3 +140,20 @@ if (themeToggle) {
     localStorage.setItem("theme", newTheme); // Remember choice after refresh
   });
 }
+
+
+// ==========================================================================
+// 5. EMAIL LINK RELIABILITY
+// Ensures mailto: links trigger the default email client reliably.
+// ==========================================================================
+const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+emailLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const mailtoUrl = link.getAttribute("href");
+    if (mailtoUrl) {
+      window.location.href = mailtoUrl;
+    }
+  });
+});
+
